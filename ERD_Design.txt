@@ -1,0 +1,9 @@
+     +------------+          +---------------+          +---------------+
+     |  Customer  |<--1:N----|    Order     |<--1:N----| OrderLine (F) |
+     +------------+          +---------------+          +---------------+
+     | CustomerID |          | OrderID       |          | OrderLineID    |
+     |   Name     |          | CustomerID (F) |          | OrderID (F)   |
+     |  Address   |          |   OrderDate   |          | ProductID (F)  |
+     |   Phone    |          +---------------+          | Quantity (M)  |
+     +------------+                                   | TotalPrice (M) |
+                                                     +---------------+
